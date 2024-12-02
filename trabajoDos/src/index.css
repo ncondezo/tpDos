@@ -1,0 +1,57 @@
+:root {
+  /* Tipografía */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Colores básicos */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  /* Variables de tema oscuro */
+  --primary-color: #1e1e2f;
+  --secondary-color: #28293d;
+  --accent-color: #4f76c7;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --text-muted-color: #a8a8b3;
+  --border-color: #3c3c4e;
+  --button-bg: #4f76c7;
+  --button-bg-hover: #3a5a9a;
+  --button-text-color: #ffffff;
+  --color-error: red;
+
+  /* Optimización */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--primary-color); /* Oscuro por defecto */
+  color: var(--text-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Ajusta los colores para tema claro */
+    --primary-color: #ffffff;
+    --secondary-color: #f0f0f0;
+    --accent-color: #007bff;
+    --text-color: #213547;
+    --text-muted-color: #6c757d;
+    --border-color: #d1d1cc;
+    --button-bg: #007bff;
+    --button-bg-hover: #0056b3;
+    --button-text-color: #ffffff;
+
+    color: #213547;
+    background-color: var(--primary-color);
+  }
+}

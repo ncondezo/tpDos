@@ -1,0 +1,18 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de dependencias
+node_modules/
+vendor/
+.env
+
+# Archivos de compilación
+*.log
+*.class
+*.o
+*.exe
+
+# Archivos de configuración de IDE
+.vscode/
+.idea/
